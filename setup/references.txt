@@ -6,4 +6,4 @@ reference manual: https://ruby-doc.org/docs/Manual/man-1.4/
                   https://www.tutorialspoint.com/ruby/ruby_quick_guide.html
 ruby community : https://www.ruby-forum.com/
 ruby major project coded: https://github.com/Shopify/example-ruby-app
-                  
+compiler/interpreter for the ruby: ruby 2.6.3p62 (2019-04-16 revision 67580) [universal.x86_64-darwin19] in MacOS terminal
