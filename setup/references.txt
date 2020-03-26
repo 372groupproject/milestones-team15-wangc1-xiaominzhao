@@ -1,1 +1,9 @@
 sources of information: 
+book : Ruby Data Processing Using Map, Reduce, and Select. By Jay Godse.
+       Learn Ruby the Hard Way, 3rd Edition.
+website : https://ruby-doc.com/docs/ProgrammingRuby/
+reference manual: https://ruby-doc.org/docs/Manual/man-1.4/
+                  https://www.tutorialspoint.com/ruby/ruby_quick_guide.html
+ruby community : https://www.ruby-forum.com/
+                 
+                  
