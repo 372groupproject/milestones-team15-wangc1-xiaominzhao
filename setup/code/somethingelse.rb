@@ -1,0 +1,5 @@
+name1 = "Chen Wang"
+name2 = "Xiaomin Zhao"
+puts "Hello, I am #{name1}, My teammate is #{name2}"
+puts "Now I will show something else in ruby"
+puts "Is it 10 is even? #{10 % 2 == 0}"
