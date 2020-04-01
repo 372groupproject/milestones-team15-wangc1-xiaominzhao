@@ -3,4 +3,12 @@ open terminal and type command:ruby hello.rb
                                ruby somethingelse.rb
 to run these two ruby files you can see resulf.
 
+p2_if.rb is an small program that utilize the if-elsif-else statement to implement the grading system. 
+To use this program, need to input an positive number. 
+
+p2_switch.rb is an small program that used switch statemnet to calculate grades. To use the program, user need to input a positive number.
+
+p2_while.rb this is a small program that count from zero to the entered number exclusivly. To use the program, user need to input an positive number. 
+
+p2_bmiCalculator.rb is an small program that can calculate a person's BMI. To use the calculator, user will nee to enter their height in meter and weight in KG. 
 
