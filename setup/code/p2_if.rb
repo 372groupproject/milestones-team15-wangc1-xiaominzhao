@@ -1,3 +1,4 @@
+puts "If-else statment, grade calculator."
 grade = gets.chomp.to_i
 # grade = Integer(grade)
 if (grade < 60 )
