@@ -1,3 +1,4 @@
+puts "switch statment grade calculator."
 grade = gets.chomp.to_i
 # grade = Integer(grade)
 
