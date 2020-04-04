@@ -1,6 +1,6 @@
 puts "please give a number from 1 to 10"
-number = gets
-number = Integer(number)
+number = gets.chomp.to_i
+# number = Integer(number)
 i = 0
 
 while (i < number)
