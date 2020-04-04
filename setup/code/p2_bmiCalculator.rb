@@ -1,9 +1,9 @@
 puts "Please enter your weight in Kilogram"
-weight = gets
-weight = Float (weight)
+weight = gets.chomp.to_f
+# weight = Float (weight)
 puts "Please enter your height in meter"
-height = gets
-height = Float (height)
+height = gets.chomp.to_f
+# height = Float (height)
 
 number = weight / (height * height)
 number = number.round(1)
