@@ -1,5 +1,5 @@
-grade = gets
-grade = Integer(grade)
+grade = gets.chomp.to_i
+# grade = Integer(grade)
 if (grade < 60 )
 	puts "fail"
 elsif (grade < 70)
