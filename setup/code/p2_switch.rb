@@ -1,6 +1,5 @@
 puts "switch statment grade calculator."
 grade = gets.chomp.to_i
-# grade = Integer(grade)
 
 case grade
 when 0..59.99
