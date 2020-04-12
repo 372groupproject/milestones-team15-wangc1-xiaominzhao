@@ -4,3 +4,6 @@ type_Str = "It's #{type_Float} am."
 # type_Bool = TRUE
 
 puts "#{type_Str}? No, it's #{type_Int} pm."
+
+type_comp = "*"+10.0
+puts type_comp
