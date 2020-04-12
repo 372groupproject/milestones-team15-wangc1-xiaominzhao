@@ -9,11 +9,11 @@ print "Now Type a Number (Integer): "
 get_int = gets.chomp.to_i
 puts "You input #{get_int} is a integer type.\n"
 
-print " Type a Number (Float): "
+print "Type a Number (Float): "
 get_flo = gets.chomp.to_f
 puts "You input #{get_flo} is a float type.\n"
 
-print " Type a Sentence (String): "
+print "Type a Sentence (String): "
 get_str = gets.chomp
 puts "You input #{get_str} is a string type.\n"
 
