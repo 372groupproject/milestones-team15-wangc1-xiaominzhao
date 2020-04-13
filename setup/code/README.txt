@@ -13,3 +13,5 @@ p2_while.rb this is a small program that count from zero to the entered number e
 p2_bmiCalculator.rb is an small program that can calculate a person's BMI. To use the calculator, user will nee to enter their height in meter and weight in KG. 
 
 Now you can download all p2_xxx files and Makefile file and use terminal type make to check all result.
+
+Download p3_feature.rb and type make to run at terminal the first runing program is p3_feature, check resulf and follow the notice to continue
