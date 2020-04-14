@@ -1,4 +1,4 @@
 Our program will implement a game/database/. . . that . . .
 We expect the program to have the modules/ les/functions:  . . .
 We expect the program to be approximately . . .  lines of code.
-We think this program will be a good illustration of the features of our languagebe
+We think this program will be a good illustration of the features of our language because....
