@@ -1,4 +1,6 @@
 Our program will implement a word gussing game.
 We expect the program to have two classes and at least three functions, to get the input handle input and to output. 
 We expect the program to be approximately 300 lines. 
-We think this program will be a good illustration of the features of our language because this objective 
+We think this program will be a good illustration of the features of our language because Ruby is a dynamic programming 
+language therefore, it does not have hard rules on how to build features and it is very close to spoken languages. It is 
+an Object-Oriented language and everything is an object.  Ruby uses dynamic typing and the constructor name is always “initialize”. 
