@@ -16,4 +16,4 @@ Now you can download all p2_xxx files and Makefile file and use terminal type ma
 
 Download p3_feature.rb and new Makefile then type make to run at terminal the first runing program is p3_feature, check resulf and follow the notice to continue
 
-p4_feature.rb : Type "make" in terminal. The first running program is this program (p4_feature.rb). The first part of the \n program is to introduct the two sub-routine in Ruby. One is function, and the other one is class. The second part of the program is a small number gussing game. Which the program granerate a random number, and the user can guess the random number by input. 
+p4_feature.rb : Type "make" in terminal. The first running program is this program (p4_feature.rb). The first part of the  program is to introduct the two sub-routine in Ruby. One is function, and the other one is class. The second part of the program is a small number gussing game. Which the program granerate a random number, and the user can guess the random number by input. 
