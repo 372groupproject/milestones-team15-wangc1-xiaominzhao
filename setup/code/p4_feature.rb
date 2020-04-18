@@ -18,7 +18,7 @@ end
 class Guessing_Game
     changes = 6
     new_rand = Get_random.new
-
+    puts "small-ish program."
     puts "Hello! It is a guessing game. What is your name?"
     get_name = gets.chomp
     ran_number = new_rand.rando
