@@ -1,11 +1,15 @@
 # tiny program
-def giao
-    puts "Here is function. Giao!"
+def giao(word)
+    word = "after"
+    return word
 end
 
 class Giao
-    puts "Here is class."
-    giao
+    word = "before"
+    puts word
+    new_word = giao(word)
+    puts word
+    puts new_word
 end
 
 
