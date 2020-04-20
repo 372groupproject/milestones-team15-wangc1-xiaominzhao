@@ -1,5 +1,6 @@
 # tiny program
 def giao(word)
+    puts word
     word = "after"
     return word
 end
