@@ -4,6 +4,7 @@
 
 # Custom classes for game
 class Game 
+    # This function uesd to create a words list and return a random word.
     def def_word
         list_of_word = ['abandon', 'bacteria', 'camera', 'crush', 'deadly', 
         'delay', 'efficient', 'favourable', 'generation', 'incline', 'league',
@@ -13,12 +14,14 @@ class Game
         return list_of_word[rand(32)]
     end
     
+    # Function for game information and get users input
     def game_info
         puts "Welcome to Word Guessing Game."
         puts "You need guess a word in 10 times"
         print "Are you ready?[y/n]: "
     end
 
+    # Function for get users guessing inout
     def read_play
         puts "Give you guess:"
         return gets.chomp
