@@ -60,3 +60,13 @@ son.par_only()
 
 par.adult_only()
 son.adult_only()
+
+# This code show simple exmaple of Ruby top-level.
+class Toplevel
+    def example
+        "For top-level."
+    end
+end
+
+p self.class
+p Toplevel.new.send :example

@@ -18,4 +18,4 @@ Download p3_feature.rb and new Makefile then type make to run at terminal the fi
 
 p4_feature.rb : Type "make" in terminal. The first running program is this program (p4_feature.rb). The first part of the  program is to introduct the two sub-routine in Ruby. One is function, and the other one is class. The second part of the program is a small number gussing game. Which the program granerate a random number, and the user can guess the random number by input. 
 
-p5_feature.rb : Type make in terminal. It will show some feature of Ruby like block, Inheritance,  
+p5_feature.rb : Type make in terminal. It will show some feature of Ruby like block, Inheritance, Top-level methods,
