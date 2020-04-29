@@ -20,33 +20,22 @@ class Game
     def user_input
         puts "You need input five different charactors first to get some clues.(A vowel is the best)"
         gues_list = Array.new
-        time = 1;
-        while time < 5
-            puts "#{time} input: "
+        for x in 1..5
+            print "No.#{x} input: "
             chara = gets.chomp
-            begin
-                puts "Iteration #{i}"
-                raise chara.length > 1
-                raise if chara !~ /[abcdefghijklmnopqrstuvwxyz]/i
-                raise if gues_list.include?(chara.downcase) == true
-            rescue
-                retry
-            
-            # if chara.length > 1
-            #     puts "Please input correct charactor: "
-            #     redo
-            # end
-            # if chara !~ /[abcdefghijklmnopqrstuvwxyz]/i
-            #     puts "Please input correct charactor: "
-            #     redo
-            # end
-            # if gues_list.include?(chara.downcase) == true
-            #     puts "Please input correct charactor: "
-            # end
-            
+            if chara.length > 1
+                puts "Please input correct charactor: "
+                redo
             end
-            array.push(chara)
-            time++
+            if chara !~ /[abcdefghijklmnopqrstuvwxyz]/i
+                puts "Please input correct charactor: "
+                redo
+            end
+            if gues_list.include?(chara.downcase) == true
+                puts "Input has exist try other charactors: "
+                redo
+            end
+            gues_list.push(chara)
         end
         return gues_list
     end
@@ -78,6 +67,7 @@ end
 new_game = Game.new
 new_char = Array.new
 times = 10
+new_game.roll
 new_game.game_info
 
 answer = gets.chomp
@@ -86,6 +76,7 @@ while answer !~ /[y|n]$/i
     answer = gets.chomp
 end
 ans_word = new_game.def_word
+
 if answer == "y"
     new_char = new_game.user_input
     puts new_char

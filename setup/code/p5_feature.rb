@@ -69,7 +69,7 @@ class Child < Parent
         puts "After parent super"
     end
 
-    def override()
+    def for_override()
       puts "Child override."
     end
 end
