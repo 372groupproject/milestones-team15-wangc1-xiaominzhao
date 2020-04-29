@@ -107,31 +107,31 @@ end
 new_game.roll
 
 while true
-if answer == "y"
-    ans_word = new_game.def_word
-    new_char = new_game.user_input
-    puts new_char
-    new_game.roll
-    new_game.give_clue(ans_word, new_char)
+    if answer == "y"
+        ans_word = new_game.def_word
+        new_char = new_game.user_input
+        puts new_char
+        new_game.roll
+        new_game.give_clue(ans_word, new_char)
     
-    while times > 0
-        get_word = new_game.read_play
-        if get_word == ans_word
-            break
-        else
-            puts "Wrong! keep thinking, #{times} changes remain. " 
-        end
-        times-=1
+        while times > 0
+            get_word = new_game.read_play
+            if get_word == ans_word
+                break
+            else
+                puts "Wrong! keep thinking, #{times} changes remain. " 
+            end
+            times-=1
         
-    end
-    if times <= 0
-        puts "Nope! the word is #{ans_word}"
-    else
-        puts "Genius, you got it, the word is #{ans_word}"
-    end
+        end
+        if times <= 0
+            puts "Nope! the word is #{ans_word}"
+        else
+            puts "Genius, you got it, the word is #{ans_word}"
+        end
     
-else
-    puts "See you!"
-end
-    break if new_game.end_game == 0
+    else
+        puts "See you!"
+    end
+        break if new_game.end_game == 0
 end
