@@ -26,6 +26,7 @@ class Game
         puts "Give you guess:"
         return gets.chomp
     end
+    
     def end_game
         puts "Bye!"
     end

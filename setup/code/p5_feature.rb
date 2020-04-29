@@ -13,8 +13,20 @@ end
 
 puts "Here is a example for block of Ruby, it open and puts contant of file: Makefile."
 open_file("Makefile")
+puts "\n"
 
-
+# A example code to show a ruby lexical feature.
+puts "Here is a example code to show a ruby lexical feature."
+def char_check
+    puts "We will check charactor \'a\' that if in string \"Click here to join Zoom Meeting\"." 
+    if 'a' !~ /[Click here to join Zoom Meeting]/i
+        return puts "Not in string."
+    else
+        return puts "In string."
+    end
+end
+char_check
+puts "\n"
 # This code show Ruby Inheritance
 class Parent
     def for_super()
@@ -61,6 +73,8 @@ son.par_only()
 
 par.adult_only()
 son.adult_only()
+puts "\n"
+puts "\n"
 
 # This code show simple exmaple of Ruby top-level.
 class Toplevel
