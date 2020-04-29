@@ -45,7 +45,8 @@ class Child < Parent
       puts "Child override."
     end
 end
-  
+
+puts "This is a code for Ruby Inheritance"
 par = Parent.new()
 son = Child.new()
  
@@ -64,7 +65,7 @@ son.adult_only()
 # This code show simple exmaple of Ruby top-level.
 class Toplevel
     def example
-        "For top-level."
+        "This is a code For top-level."
     end
 end
 
