@@ -16,7 +16,7 @@ open_file("Makefile")
 puts "\n"
 
 # A example code to show a ruby lexical feature.
-puts "Here is a example code to show a ruby lexical feature."
+puts "Here is a example code to show a ruby lexical feature check charactor."
 def char_check
     puts "We will check charactor \'a\' that if in string \"Click here to join Zoom Meeting\"." 
     if 'a' !~ /[Click here to join Zoom Meeting]/i
@@ -27,6 +27,22 @@ def char_check
 end
 char_check
 puts "\n"
+
+# A example code to show a ruby lexical feature.
+puts "Here is a example code to show a ruby lexical feature, if-statement and break in iterate."
+puts "if-statement initeration 10 times but break when 5"
+def iterate_con
+    times = 0
+    for times in 1..10
+        if times > 5 then
+            break
+        end
+        puts times
+    end
+end
+iterate_con
+puts "\n"
+
 # This code show Ruby Inheritance
 class Parent
     def for_super()
