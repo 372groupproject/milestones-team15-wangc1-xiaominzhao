@@ -17,6 +17,7 @@ class Game
         return list_of_word[rand(32)]
     end
 
+    # Get user input which are five charactors
     def user_input
         puts "You need input five different charactors first to get some clues.(A vowel is the best)"
         gues_list = Array.new
@@ -40,6 +41,29 @@ class Game
         return gues_list
     end
 
+    # From user input charactors it can calculate clue back to user to guess whole word.
+    def give_clue(anser, gus_chara)
+        new_list = Array.new
+        y = 0
+        puts anser
+        anser.each_char do |compare|
+            # puts compare
+            y = 0
+            gus_chara.each do |guessing|
+                if compare == guessing then
+                    y = 1
+                    new_list.push(compare)
+                    break
+                end
+            end
+            if y == 0
+                new_list.push("_")
+            end
+        end
+        puts "There is the clue:\n                   "+new_list.join(' ')
+    end
+
+
     # Function for game information and get users input
     def game_info
         puts "Welcome to Word Guessing Game."
@@ -49,7 +73,7 @@ class Game
     
     # Function for get users guessing input
     def read_play
-        puts "Give you guess:"
+        puts "Intput the word in your mind:"
         return gets.chomp
     end
 
@@ -58,7 +82,12 @@ class Game
     end
 
     def end_game
-        puts "Bye!"
+        print "Do you want to guess again?(y can play again,any type exit game): "
+        pla = gets.chomp
+        if pla == "y"
+            return 1
+        end
+        return 0
     end
 end
 
@@ -75,27 +104,34 @@ while answer !~ /[y|n]$/i
     print "Error: input 'y' or 'n' please: "
     answer = gets.chomp
 end
-ans_word = new_game.def_word
+new_game.roll
 
+while true
 if answer == "y"
+    ans_word = new_game.def_word
     new_char = new_game.user_input
     puts new_char
+    new_game.roll
+    new_game.give_clue(ans_word, new_char)
+    
     while times > 0
         get_word = new_game.read_play
         if get_word == ans_word
             break
         else
-            puts "Wrong! keep thinking " 
+            puts "Wrong! keep thinking, #{times} changes remain. " 
         end
         times-=1
+        
     end
     if times <= 0
         puts "Nope! the word is #{ans_word}"
     else
         puts "Genius, you got it, the word is #{ans_word}"
     end
-    new_game.end_game
-
+    
 else
-    new_game.end_game
+    puts "See you!"
+end
+    break if new_game.end_game == 0
 end
