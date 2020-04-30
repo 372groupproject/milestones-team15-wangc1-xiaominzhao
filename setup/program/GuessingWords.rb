@@ -45,14 +45,15 @@ class Game
     def give_clue(anser, gus_chara)
         new_list = Array.new
         y = 0
-        puts anser
+        # puts anser  # show the answer for debug check
+        # iterate charactor and answer word
         anser.each_char do |compare|
             # puts compare
             y = 0
             gus_chara.each do |guessing|
                 if compare == guessing then
                     y = 1
-                    new_list.push(compare)
+                    new_list.push(compare)# show exit charactor as clue at answer word
                     break
                 end
             end
@@ -77,10 +78,12 @@ class Game
         return gets.chomp
     end
 
+    # method for clean screen
     def roll
         puts "> \n" * 32
     end
 
+    # show some information
     def end_game
         print "Do you want to guess again?(y can play again,any type exit game): "
         pla = gets.chomp
@@ -104,16 +107,19 @@ while answer !~ /[y|n]$/i
     print "Error: input 'y' or 'n' please: "
     answer = gets.chomp
 end
+# clean screen information
 new_game.roll
 
+# if input y start game oterwise exit program
 while true
     if answer == "y"
         ans_word = new_game.def_word
         new_char = new_game.user_input
         puts new_char
         new_game.roll
-        new_game.give_clue(ans_word, new_char)
-    
+
+        new_game.give_clue(ans_word, new_char) # give user a clue
+        # 10 changes for guessing word
         while times > 0
             get_word = new_game.read_play
             if get_word == ans_word
